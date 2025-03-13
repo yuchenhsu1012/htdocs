@@ -1,0 +1,72 @@
+<html>
+    <head>
+        <meta charset="utf-8">
+    </head>
+
+    <body bgcolor="white"  text="#000000">
+        <style type="text/css">
+            .tg  {border-collapse:collapse;border-spacing:0;}
+            .tg td{border-color:black;border-style:solid;border-width:1px;font-family:Arial, sans-serif;font-size:14px;
+              overflow:hidden;padding:5px 20px;word-break:normal;}
+            .tg th{border-color:black;border-style:solid;border-width:1px;font-family:Arial, sans-serif;font-size:14px;
+              font-weight:normal;overflow:hidden;padding:5px 20px;word-break:normal;}
+            .tg .tg-0pky{border-color:inherit;text-align:left;vertical-align:top}
+            </style>
+            <table class="tg"><thead>
+              <tr>
+                <th class="tg-0pky">第一天</th>
+                <th class="tg-0pky">台南牛肉湯</th>
+              </tr></thead>
+            <tbody>
+              <tr>
+                <td class="tg-0pky">第二天</td>
+                <td class="tg-0pky">黃金海岸</td>
+              </tr>
+              <tr>
+                <td class="tg-0pky">第三天</td>
+                <td class="tg-0pky">開心回家</td>
+              </tr>
+            </tbody>
+            </table>
+            <form action= "about.php" method="POST">
+
+              <h1>報名表單</h1>
+              Please input your name:<input type="text" name= "uName"><br>
+              Please input your password:<input type="password" name= "uPwd"><br>
+              Please input your email:<input type="email" name= "uEmail"><br>
+              Please select your color:<input type="color" name= "uColor"><br>
+              Please select your age:<input type="number" name= "uAge"><br>
+              Please select your birthday:<input type="date" name= "uBirth"><br>
+              Please select how you like the webpage:<input type="range" name= "uLike"><br>
+     
+              <input type="hidden" name="uSecret" value="hahaha"><br>
+     
+              Please select your gender:Male<input type="radio" name="uGender" value="male">
+              Female<input type="radio" name="uGender" value="female"><br>
+     
+              Please select your interest:<br>
+              Study<input type="checkbox" name= "uInterest[]" value="study">
+              Sleep<input type="checkbox" name= "uInterest[]" value="sleep">
+              Game<input type="checkbox" name= "uInterest[]" value="game"><br>
+     
+              Please select your city:<br>
+              <select name="city">
+                 <option value="Taipei">Taipei</option>
+                 <option value="Taichung">Taichung</option>
+                 <option value="Kaohsiung">Kaohsiung</option>
+              </select>
+     
+              <br>Please input your comments:
+              <br><textarea cols="30" rows="10" name="uComments">
+     
+              </textarea>
+     
+     
+             <input type="submit"><input type="reset">
+            </form>
+          
+            <br/>
+
+            <a href="index.html">回首頁</a>
+    </body>
+</html>
